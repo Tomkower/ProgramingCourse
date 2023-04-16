@@ -17,10 +17,11 @@ while True:
         c = int(input())
 
         delta = b**2 - 4*a*c
+        print("Delta równania kwadratwego wynosi ",delta)
         if (delta > 0):
             print("Równanie kwadratowe ma dwa rozwiązania.")
-            x1 = (-b-(math.sqrt(delta)))/(2*a)
-            x2 = (-b+(math.sqrt(delta)))/(2*a)
+            x1 = (-b - math.sqrt(delta)) / (2*a)
+            x2 = (-b + math.sqrt(delta)) / (2*a)
             print("x1 =",x1," oraz x2 =",x2,".")
         elif (delta == 0):
             print("Równanie kwadratowe ma jedno rozwiązanie.")
